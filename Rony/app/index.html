@@ -1,0 +1,47 @@
+<html>
+	<title>Testing</title>
+	<head>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="assets/js/engine.js"></script>
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+		<script src="https://code.highcharts.com/modules/data.js"></script>
+		<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+		<script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="assets/js/chartengine.js"></script>
+		<script src="assets/js/piechartengine.js"></script>
+		<script src="assets/js/linechartengine.js"></script>
+	</head>
+	<body>
+		<center><h1 class="font">Rony Natakusumah</h1></center>
+		<div class="dropdown">
+		  <button onclick="myFunction()" class="btndn">Dropdown</button>
+		  <div id="myDropdown" class="dropdown-content">
+		    <a href="#">Menu 1</a>
+		    <a href="#">Menu 2</a>
+		    <a href="#">Menu 3</a>
+		  </div>
+		</div>
+		<ul class="tab">
+		  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Chart1')">Chart 1</a></li>
+		  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Chart2')">Chart 2</a></li>
+		  <li><a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Chart3')">Chart 3</a></li>
+		</ul>
+
+		<div id="Chart1" class="tabcontent scrollbar">
+		  <h3>Ini Column Drilldown</h3>
+		  <div id="chart" style="min-width: 1000px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+		</div>
+
+		<div id="Chart2" class="tabcontent scrollbar">
+		  <h3>Ini Pie Chart</h3>
+		  <div id="pie" style="min-width: 1000px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+		  
+		</div>
+
+		<div id="Chart3" class="tabcontent scrollbar">
+		  <h3>Ini Line Chart</h3>
+		  <div id="line" style="min-width: 1000px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+		</div>
+	</body>
+</html>
