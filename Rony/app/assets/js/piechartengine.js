@@ -5,7 +5,7 @@ $(function () {
 
         Highcharts.chart('pie', {
             chart: {
-                plotBackgroundColor: null,
+                backgroundColor: '#C0C0C0',
                 plotBorderWidth: null,
                 plotShadow: false,
                 type: 'pie'
@@ -31,21 +31,26 @@ $(function () {
                 colorByPoint: true,
                 data: [{
                     name: 'Microsoft Internet Explorer',
-                    y: 56.33
+                    y: 56.33,
+                    color: '#800000'
                 }, {
                     name: 'Chrome',
                     y: 24.03,
                     sliced: true,
-                    selected: true
+                    selected: true,
+                    color: '#0000A0'
                 }, {
                     name: 'Firefox',
-                    y: 10.38
+                    y: 10.38,
+                    color: '#008000'
                 }, {
                     name: 'Safari',
-                    y: 4.77
+                    y: 4.77,
+                    color: '#000000'
                 }, {
                     name: 'Opera',
-                    y: 0.91
+                    y: 0.91,
+                    color: '#FFFF00'
                 }, {
                     name: 'Proprietary or Undetectable',
                     y: 0.2

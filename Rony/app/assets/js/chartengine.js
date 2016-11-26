@@ -2,20 +2,23 @@ $(function () {
     
     Highcharts.chart('chart', {
         chart: {
+            backgroundColor: '#000000',
+            plotBorderWidth: null,
+            plotShadow: false,
             type: 'column'
         },
         title: {
-            text: 'Browser market shares. January, 2015 to May, 2015'
+            text: '<p style="color:#ffffff">Browser market shares. January, 2015 to May, 2015</p>'
         },
         subtitle: {
-            text: 'Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.'
+            text: '<p style="color:#ffffff">Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.</p>'
         },
         xAxis: {
-            type: 'category'
+            type: '<p style="color:#ffffff">category</p>'
         },
         yAxis: {
             title: {
-                text: 'Total percent market share'
+                text: '<p style="color:#ffffff">Total percent market share</p>'
             }
 
         },
@@ -43,23 +46,28 @@ $(function () {
             data: [{
                 name: 'Microsoft Internet Explorer',
                 y: 56.33,
-                drilldown: 'Microsoft Internet Explorer'
+                drilldown: 'Microsoft Internet Explorer',
+                color: '#800000'
             }, {
                 name: 'Chrome',
                 y: 24.03,
-                drilldown: 'Chrome'
+                drilldown: 'Chrome',
+                color: '#0000A0'
             }, {
                 name: 'Firefox',
                 y: 10.38,
-                drilldown: 'Firefox'
+                drilldown: 'Firefox',
+                color: '#008000'
             }, {
                 name: 'Safari',
                 y: 4.77,
-                drilldown: 'Safari'
+                drilldown: 'Safari',
+                color: '#000000'
             }, {
                 name: 'Opera',
                 y: 0.91,
-                drilldown: 'Opera'
+                drilldown: 'Opera',
+                color: '#FFFF00'
             }, {
                 name: 'Proprietary or Undetectable',
                 y: 0.2,
